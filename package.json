@@ -1,0 +1,28 @@
+{
+  "name": "geekbrains-nodejs",
+  "version": "1.0.0",
+  "description": "For learning node.js",
+  "main": "index.js",
+  "dependencies": {
+    "ansi": "^0.3.1",
+    "http": "0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davakir/geekbrains-nodejs.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Darya Kiryanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davakir/geekbrains-nodejs/issues"
+  },
+  "homepage": "https://github.com/davakir/geekbrains-nodejs#readme"
+}
