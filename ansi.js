@@ -25,13 +25,10 @@ console.log('This will still be bold, but not red');
 cursor.goto(10, 5).write('Five down, ten over');
 
 // to clear the current line:
-cursor.horizontalAbsolute(0).eraseLine().write('Starting again');
+cursor.horizontalAbsolute(0).eraseLine().write("Starting again");
 //
 // to go to a different column on the current line:
-cursor.horizontalAbsolute(10).red().write('column five');
+cursor.horizontalAbsolute(10).red().write("column five" + "\n");
 
 // Clean up after yourself!
 cursor.reset();
-
-
-var input =

@@ -1,9 +1,8 @@
 const http = require("http");
-const ansi = require("ansi");
 
 var server = http.createServer(function(req, res) {
     res.writeHead(200);
-    res.end("Hello Http\n");
+    res.end(req.methods);
 });
 
 server.listen(8080);
