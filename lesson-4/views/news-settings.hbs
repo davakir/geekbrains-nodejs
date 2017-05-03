@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Конфигурация вывода новостей</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <form action="/news" method="get">
+        <div>
+            <label for="source">Выберите источник новостей: </label>
+            <select name="source" id="source">
+                {{#each sources}}
+                    <option value="{{this}}">{{getSourceTitle this}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div>
+            <label for="category">Выберите источник новостей: </label>
+            <select name="category" id="category">
+                {{#each categories}}
+                    <option value="{{this}}">{{getCategoryTitle this}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div>
+            <label for="quantity">Выберите количество новостей: </label>
+            <select name="quantity" id="quantity">
+                {{#each quantity}}
+                    <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <input type="submit" value="Получить">
+    </form>
+</body>
+</html>
