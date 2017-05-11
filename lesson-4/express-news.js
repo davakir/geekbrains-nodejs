@@ -4,12 +4,12 @@
 const express = require('express'),
     consolidate = require('consolidate'),
     bodyParser = require('body-parser'),
-    app = express(),
     handlebars = require('handlebars'),
+    cookieParser = require('cookie-parser'),
     NewsFactory = require('./modules/NewsFactory'),
     NewsCookie = require('./modules/NewsCookie'),
-    cookieParser = require('cookie-parser'),
-    request = require('request');
+    request = require('request'),
+    app = express();
 
 /**
  * Глобальные данные для работы с новостями.
